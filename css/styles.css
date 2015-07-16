@@ -1,0 +1,58 @@
+title {
+	background: red;
+	width: 100px;
+	height: 100px;
+	padding: 100px;
+	margin: 100px;
+	border: 2px solid gray;
+}
+
+h2{background: orange;}
+
+ul.menu {
+	position: relative;
+}
+
+ul.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: black;
+	display: none;
+	top: 35px;
+}
+
+ul.menu li li {
+	background: yellow;
+}
+
+ul.menu li:hover ul {
+	display: block;
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+	background: gray;
+	height: 200px;
+	width: 200px;
+}
+
+.absolute {
+	position: absolute;
+	background: red;
+	height: 100px;
+	width: 100px;
+	right: 0;
+	bottom: 0;
+}
+
+.mask {
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 999;
+}

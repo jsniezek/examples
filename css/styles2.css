@@ -5,9 +5,29 @@ body {
 }
 
 .header {
-	
 	display: flex;
 	flex-direction: column;
+	z-index: 999;
+}
+
+.transforms div {
+	height: 1.4em;
+	margin-top: -1em;
+	background: MediumTurquoise;
+
+	-ms-transform: rotate(0.75deg); /* IE 9 */
+    -webkit-transform: rotate(0.75deg); /* Safari */
+    transform: rotate(0.75deg);
+}
+
+.transforms div:nth-child(2){
+	background: MediumSpringGreen;
+	margin-top: -1em;
+	height: 1em;
+
+	-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Safari */
+    transform: rotate(2deg);
 }
 
 .header div {
@@ -25,6 +45,11 @@ body {
 	height: .1em;
 }
 
+nav {
+	margin-top: -0.7em;
+	background: #232333;
+}
+
 nav ul {
 	display: flex;
 	margin: 0;
@@ -38,6 +63,7 @@ nav ul {
 
 nav ul li {
 	padding: .7em 0em;
+	padding-top: 1em;
 	margin: 0em 0em;
 	background: #ededee;
 	/*padding: 0;
@@ -51,6 +77,8 @@ nav ul li a {
   	text-decoration: none;
   	font-family: 'Open Sans', sans-serif;
   	color: #444;
+  	border: 1px solid #aaa;
+  	background: #ededee;
 	/*padding: 5px;
 	background: #ccc;*/
 }

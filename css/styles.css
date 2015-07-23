@@ -1,13 +1,40 @@
-title {
-	background: red;
-	width: 100px;
+nav {
+	float: left;
+	width: 100%;
+	background: #555;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #777;
+}
+
+nav ul li {
+	padding: 0;
+	float: left;
+	background: #999;
+}
+
+nav ul li a {
+	padding: 5px;
+	background: #ccc;
+}
+
+h1 {
+	clear: both;
+	background: #eee;
 	height: 100px;
 	padding: 100px;
-	margin: 100px;
-	border: 2px solid gray;
+	border: 2px solid #ddd;
 }
 
 h2{background: orange;}
+
+.clearfix:after {
+	content: " "; /* 1 */
+}
 
 ul.menu {
 	position: relative;
@@ -38,13 +65,28 @@ ul.menu li:hover ul {
 	width: 200px;
 }
 
-.absolute {
+.absolute2 {
 	position: absolute;
 	background: red;
 	height: 100px;
 	width: 100px;
 	right: 0;
 	bottom: 0;
+}
+
+.absolute1 {
+	position: absolute;
+	background: blue;
+	height: 150px;
+	width: 150px;
+}
+
+.box {
+	background: gray;
+}
+
+.box img {
+	float: left;
 }
 
 .mask {

@@ -1,4 +1,3 @@
-@import "../bower_components/patternfly/less/patternfly.less";
 @import "../bower_components/patternfly/less/patternfly-additions.less";
 
 @fa-font-path:      "../bower_components/patternfly/components/font-awesome/fonts/";
@@ -15,6 +14,25 @@
 // }
 
 .recent-files {
+ 
+ .recent-files-heading {
+  border-bottom: 1px solid @card-pf-border-color;
+		margin: 0px -@grid-gutter-width*(3/4) 0px -@grid-gutter-width;
+		padding: 1px @grid-gutter-width 1px  @grid-gutter-width;
+}
+
+.recent-files-title {
+  font-size: @font-size-h3;
+  font-weight: 300;
+  margin: @grid-gutter-width/2 0;
+  padding: 0;
+}
+ 
+  
+  
+  
+  
+  
 	h5 {
 		margin: 0 -@grid-gutter-width*(3/4) 0 -@grid-gutter-width;
 		padding: 0 @grid-gutter-width 20px  @grid-gutter-width;
@@ -78,4 +96,41 @@
 .placeholder-text-bpms {
 	text-align: center;
 }
+
+
+.elements{
+float: right;  
+  margin-top: -13px;
+}
+
+.element{
+  float: left;
+  margin-left: 20px;
+}
+
+
+.element-icon{
+  float: left;
+  background: blue;
+  width: 40px;
+  height: 40px;
+  }
+
+.element-body{
+  margin-left: 45px;
+  background: aqua;
+  line-height: 15px;
+  strong{
+    display: block;
+    font-size: @font-size-h3;
+    font-weight: 300;
+    line-height: 25px;
+    background: red;
+  }
+}
+  
+
+
+
+
 

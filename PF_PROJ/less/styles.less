@@ -18,7 +18,7 @@
  .recent-files-heading {
   border-bottom: 1px solid @card-pf-border-color;
 		margin: 0px -@grid-gutter-width*(3/4) 0px -@grid-gutter-width;
-		padding: 1px @grid-gutter-width 1px  @grid-gutter-width;
+		padding: 2px @grid-gutter-width 0px  @grid-gutter-width;
 }
 
 .recent-files-title {
@@ -27,12 +27,7 @@
   margin: @grid-gutter-width/2 0;
   padding: 0;
 }
- 
-  
-  
-  
-  
-  
+
 	h5 {
 		margin: 0 -@grid-gutter-width*(3/4) 0 -@grid-gutter-width;
 		padding: 0 @grid-gutter-width 20px  @grid-gutter-width;
@@ -63,40 +58,17 @@
 	}
 }
 
-.card-area {
-	.big-button {
-		//.btn;
-		// .btn-lg;
-		//float: left;
-		//border-right: 1px solid @gray-lighter;
-		padding: 0 5px;
-		width: 100px;
-		text-align: center;	
-		//margin-right: 10px;
-		
+.bpm-card-list {
+	background: @card-pf-bg-color;
+	.list-group-item {
+		border-bottom: none;
+	}
+	li:last-child {
 		a {
-			margin-top: 0px;
-			text-decoration: none;
-			//color: @gray;
-			p {
-				color: @gray-light;
-				//font-weight: lighter;
-			}
+			color: @gray-light;
 		}
 	}
-	// .list-group {
-	// 	border-top: none;
-	// }
-	// .list-group-item {
-	// 	padding: 5px 15px;
-	// 	border: none;
-	// }
 }
-
-.placeholder-text-bpms {
-	text-align: center;
-}
-
 
 .elements{
 float: right;  
@@ -128,9 +100,3 @@ float: right;
     background: red;
   }
 }
-  
-
-
-
-
-

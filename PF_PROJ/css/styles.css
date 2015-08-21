@@ -3394,7 +3394,7 @@ table.datatable th:active {
 .recent-files .recent-files-heading {
   border-bottom: 1px solid #d1d1d1;
   margin: 0px -30px 0px -40px;
-  padding: 1px 40px 1px 40px;
+  padding: 2px 40px 0px 40px;
 }
 .recent-files .recent-files-title {
   font-size: 16px;
@@ -3424,20 +3424,14 @@ table.datatable th:active {
 .recent-files .list-group-item .list-group-item-text {
   color: #999999;
 }
-.card-area .big-button {
-  padding: 0 5px;
-  width: 100px;
-  text-align: center;
+.bpm-card-list {
+  background: #ffffff;
 }
-.card-area .big-button a {
-  margin-top: 0px;
-  text-decoration: none;
+.bpm-card-list .list-group-item {
+  border-bottom: none;
 }
-.card-area .big-button a p {
+.bpm-card-list li:last-child a {
   color: #999999;
-}
-.placeholder-text-bpms {
-  text-align: center;
 }
 .elements {
   float: right;

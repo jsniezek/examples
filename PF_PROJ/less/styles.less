@@ -83,20 +83,27 @@ float: right;
 
 .element-icon{
   float: left;
-  background: blue;
+  border: solid 2px @brand-primary;
+  border-radius: 100%;
   width: 40px;
   height: 40px;
+  span {
+  	margin-top: 5px;
+  	width: 100%;
+  	font-size: @font-size-h2;
+  	text-align: center;
   }
+}
 
 .element-body{
   margin-left: 45px;
-  background: aqua;
+  // background: aqua;
   line-height: 15px;
   strong{
     display: block;
     font-size: @font-size-h3;
     font-weight: 300;
-    line-height: 25px;
-    background: red;
+    line-height: 22px;
+    // background: red;
   }
 }

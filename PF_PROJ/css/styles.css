@@ -3433,34 +3433,40 @@ table.datatable th:active {
 .bpm-card-list li:last-child a {
   color: #999999;
 }
-.elements {
+.circled-icon-indicator-set {
   float: right;
   margin-top: -13px;
 }
-.element {
+.circled-icon-indicator {
   float: left;
-  margin-left: 20px;
+  margin-left: 30px;
 }
-.element-icon {
+.indicators-label {
+  margin-top: 2px;
+  text-align: right;
+  margin-right: -5px;
+}
+.circled-icon {
   float: left;
   border: solid 2px #00a8e1;
   border-radius: 100%;
   width: 40px;
   height: 40px;
 }
-.element-icon span {
-  margin-top: 5px;
+.circled-icon span {
+  margin-top: 7px;
   width: 100%;
-  font-size: 22px;
+  color: #555555;
+  font-size: 18px;
   text-align: center;
 }
-.element-body {
-  margin-left: 45px;
+.indicator-body {
+  margin-left: 50px;
   line-height: 15px;
 }
-.element-body strong {
+.indicator-body strong {
   display: block;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 22px;
 }

@@ -70,39 +70,45 @@
 	}
 }
 
-.elements{
+.circled-icon-indicator-set{
 float: right;  
   margin-top: -13px;
 }
 
-.element{
+.circled-icon-indicator{
   float: left;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
+.indicators-label{
+	margin-top: 2px;
+	text-align: right;
+	margin-right: -5px;
+}
 
-.element-icon{
+.circled-icon{
   float: left;
   border: solid 2px @brand-primary;
   border-radius: 100%;
   width: 40px;
   height: 40px;
   span {
-  	margin-top: 5px;
+  	margin-top: 7px;
   	width: 100%;
-  	font-size: @font-size-h2;
+  	color: @gray;
+  	font-size: ceil((@font-size-base * 1.5)); // note: somehow this is bigger than using font-size-h3...
   	text-align: center;
   }
 }
 
-.element-body{
-  margin-left: 45px;
+.indicator-body{
+  margin-left: 50px;
   // background: aqua;
   line-height: 15px;
   strong{
     display: block;
     font-size: @font-size-h3;
-    font-weight: 300;
+    font-weight: normal;
     line-height: 22px;
     // background: red;
   }

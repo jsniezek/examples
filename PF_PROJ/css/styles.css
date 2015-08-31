@@ -3476,3 +3476,6 @@ table.datatable th:active {
 .activity-timeline-date-label {
   color: #999999;
 }
+.bpm-hover-list {
+  white-space: pre-wrap;
+}

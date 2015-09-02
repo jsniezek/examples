@@ -3437,6 +3437,11 @@ table.datatable th:active {
   float: right;
   margin-top: -13px;
 }
+.circled-icon-indicator-set h5 {
+  float: left;
+  margin: 0;
+  line-height: 40px;
+}
 .circled-icon-indicator {
   float: left;
   margin-left: 30px;
@@ -3471,11 +3476,17 @@ table.datatable th:active {
   line-height: 22px;
 }
 .activity-timeline {
-  margin-left: -38px;
+  margin-bottom: 20px;
 }
 .activity-timeline-date-label {
   color: #999999;
 }
 .bpm-hover-list {
   white-space: pre-wrap;
+}
+.chart {
+  margin-bottom: 20px;
+}
+.chart img {
+  width: 100%;
 }

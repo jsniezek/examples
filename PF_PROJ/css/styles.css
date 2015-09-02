@@ -3433,43 +3433,42 @@ table.datatable th:active {
 .bpm-card-list li:last-child a {
   color: #999999;
 }
-.circled-icon-indicator-set {
+.bpm-numeric-indicators {
   float: right;
   margin-top: -13px;
 }
-.circled-icon-indicator-set h5 {
+.bpm-numeric-indicators h5 {
   float: left;
   margin: 0;
   line-height: 40px;
 }
-.circled-icon-indicator {
+.bpm-numeric-indicator {
   float: left;
   margin-left: 30px;
 }
-.indicators-label {
-  margin-top: 2px;
-  text-align: right;
-  margin-right: -5px;
+.bpm-numeric-indicator a {
+  text-decoration: none;
+  color: #333333;
 }
-.circled-icon {
+.bpm-numeric-indicator-icon {
   float: left;
   border: solid 2px #00a8e1;
   border-radius: 100%;
   width: 40px;
   height: 40px;
 }
-.circled-icon span {
+.bpm-numeric-indicator-icon span {
   margin-top: 7px;
   width: 100%;
   color: #555555;
   font-size: 18px;
   text-align: center;
 }
-.indicator-body {
+.bpm-numeric-indicator-text {
   margin-left: 50px;
   line-height: 15px;
 }
-.indicator-body strong {
+.bpm-numeric-indicator-text strong {
   display: block;
   font-size: 16px;
   font-weight: normal;
@@ -3484,9 +3483,9 @@ table.datatable th:active {
 .bpm-hover-list {
   white-space: pre-wrap;
 }
-.chart {
+.bpm-homepage-chart {
   margin-bottom: 20px;
 }
-.chart img {
+.bpm-homepage-chart img {
   width: 100%;
 }

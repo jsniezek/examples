@@ -71,10 +71,7 @@
 	}
 }
 
-
-
-
-.circled-icon-indicator-set{
+.bpm-numeric-indicators{
 float: right;  
 margin-top: -13px;
 
@@ -86,20 +83,22 @@ margin-top: -13px;
 
 }
 
-
-
-.circled-icon-indicator{
+.bpm-numeric-indicator{
   float: left;
   margin-left: 30px;
+  a {
+    text-decoration: none;
+    color: @text-color;
+  }
 }
 
-.indicators-label{
-	margin-top: 2px;
-	text-align: right;
-	margin-right: -5px;
-}
+// .indicators-label{
+// 	margin-top: 2px;
+// 	text-align: right;
+// 	margin-right: -5px;
+// }
 
-.circled-icon{
+.bpm-numeric-indicator-icon{
   float: left;
   border: solid 2px @brand-primary;
   border-radius: 100%;
@@ -114,21 +113,18 @@ margin-top: -13px;
   }
 }
 
-.indicator-body{
+.bpm-numeric-indicator-text{
   margin-left: 50px;
-  // background: aqua;
   line-height: 15px;
   strong{
     display: block;
     font-size: @font-size-h3;
     font-weight: normal;
     line-height: 22px;
-    // background: red;
   }
 }
 
 .activity-timeline{
-//	margin-left: -38px;
 margin-bottom: 20px;
 }
 
@@ -141,10 +137,9 @@ margin-bottom: 20px;
 }
 
 
-.chart{
+.bpm-homepage-chart{
   margin-bottom: 20px;
   img{
     width: 100%;
   }
-
 }

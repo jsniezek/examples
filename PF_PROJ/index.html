@@ -56,7 +56,11 @@
                 Pending Tasks
               </h2>
             </div>
-            <div id="chart8"></div>
+            <div class="bpm-homepage-chart">
+              <!-- replace the image for the chart -->
+              <img src="http://placehold.it/350x350?text=chart">
+            </div>
+            <!-- <div id="chart8"></div> -->
             <ul class="list-group card-pf-footer bpm-card-list">
               <li class="list-group-item"><a href="#"><p class="list-group-item-text">Task 1</p></a></li>
               <li class="list-group-item"><a href="#"><p class="list-group-item-text">Task 2</p></a></li>
@@ -65,14 +69,13 @@
               <li class="list-group-item"><a href="#"><p class="list-group-item-text">All tasks...</p></a></li>
             </ul>
           </div>
-            <div class="card-pf-footer">
-              <p>
-                <a href="#" class="add" data-toggle="tooltip" data-placement="top" title="" data-original-title="Create a task for any user, role, or group"><span class="pficon pficon-add-circle-o"></span>Create a task</a>
-              </p>
-            </div>
-
-				</div>
-			</div>
+          <div class="card-pf-footer">
+            <p>
+              <a href="#" class="add" data-toggle="tooltip" data-placement="top" title="" data-original-title="Create a task for a user, role, or group"><span class="pficon pficon-add-circle-o"></span>Create a task</a>
+            </p>
+          </div>
+				</div> <!-- card end -->
+			</div> <!-- card column end -->
 			<div class="col-sm-3 col-sm-push-3 card-area">
 				<div class="card-pf">
 					<div class="card-pf-body">
@@ -81,9 +84,9 @@
   							Active Processes
   						</h2>
   					</div>
-            <div class="chart">
+            <div class="bpm-homepage-chart">
               <!-- replace the image for the chart -->
-              <img src="http://placehold.it/350x450?text=chart">
+              <img src="http://placehold.it/350x350?text=chart">
             </div>
             	
       				<ul class="list-group card-pf-footer bpm-card-list">
@@ -94,9 +97,11 @@
                 <li class="list-group-item"><a href="#"><p class="list-group-item-text">Process 5</p></a></li>
       					<li class="list-group-item"><a href="#"><p class="list-group-item-text">All processes...</p></a></li>
               </ul>
-            <div class="card-pf-footer">
-              <a href="#" class="add" data-toggle="tooltip" data-placement="top" title="" data-original-title="There are 4 process types available for you to start"><span class="pficon pficon-add-circle-o"></span>Start a process</a>
-            </div>
+          </div>
+          <div class="card-pf-footer">
+            <p>
+              <a href="#" class="add" data-toggle="tooltip" data-placement="top" title="" data-original-title="There are currently 4 process types available for you to start"><span class="pficon pficon-add-circle-o"></span>Start a process</a>
+            </p>
           </div>
 				</div>
 			</div>
@@ -104,24 +109,27 @@
   				<div class="card-pf">
   					<div class="card-pf-body">
   					<div class="card-pf-heading">
-    					<div class="pull-right"><span class="badge">13</span></div>
+    					<div class="pull-right"><span class="badge">3</span></div>
   						<h2 class="card-pf-title">
   							Projects
   						</h2>
   					</div>
-            <div class="chart">
+            <div class="bpm-homepage-chart">
               <!-- replace the image for the chart -->
-              <img src="http://placehold.it/350x450?text=chart">
+              <img src="http://placehold.it/350x350?text=chart">
             </div>
             <ul class="list-group card-pf-footer bpm-card-list">
               <li class="list-group-item"><a href="#"><p class="list-group-item-text">Project 1</p></a></li>
               <li class="list-group-item"><a href="#"><p class="list-group-item-text">Project 2</p></a></li>
+              <li class="list-group-item"><a href="#"><p class="list-group-item-text">Project 3</p></a></li>
               <li class="list-group-item"><a href="#"><p class="list-group-item-text">All Projects...</p></a></li>
             </ul>
-            <div class="card-pf-footer">
-              <a href="#" class="add" data-toggle="tooltip" data-placement="top" title="" data-original-title="Create a new project from scratch or copy a template"><span class="pficon pficon-add-circle-o"></span>New Project</a>
-            </div>
           </div>
+          <div class="card-pf-footer">
+              <p>
+                <a href="#" class="add" data-toggle="tooltip" data-placement="top" title="" data-original-title="Create a new project from scratch or copy a template"><span class="pficon pficon-add-circle-o"></span>New Project</a>
+              </p>
+            </div>
 				</div>
 			</div>
 
@@ -160,32 +168,34 @@
 			<div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 card-area">
 				<div class="card-pf">
 					<div class="card-pf-heading">
-						<div class="circled-icon-indicator-set">
-              
-                  <h5>Showing:</h5>
-  						
-  						<div class="circled-icon-indicator" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Click to change who you're following.">
-  							<div class="circled-icon">
-    							<span class="pficon pficon-user"></span>
-                </div>
-                <div class="indicator-body">
-                  <strong>24</strong>Users
-                </div>
+						<div class="bpm-numeric-indicators">
+              <h5>Following:</h5>
+  						<div class="bpm-numeric-indicator" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Click to manage your following list.">
+                <a href="#">
+    							<div class="bpm-numeric-indicator-icon">
+      							<span class="pficon pficon-user"></span>
+                  </div>
+                  <div class="bpm-numeric-indicator-text">
+                    <p>
+                      <strong>24</strong>Users
+                    <p>
+                  </div>
+                </a>
     				  </div>
-  						<div class="circled-icon-indicator" data-toggle="tooltip" data-html="true" data-placement="bottom" title="" data-original-title="Mortgage Group<br>Finance Group<br>Administrators<br>Loan Group<br>Money Group<br>Other Group">
-  							<div class="circled-icon">
+  						<div class="bpm-numeric-indicator" data-toggle="tooltip" data-html="true" data-placement="bottom" title="" data-original-title="Mortgage Group<br>Finance Group<br>Administrators<br>Loan Group<br>Money Group<br>Other Group<br>and 36 more...">
+  							<div class="bpm-numeric-indicator-icon">
     							<span class="pficon pficon-users"></span>
                 </div><!-- icon -->
-                <div class="indicator-body">
+                <div class="bpm-numeric-indicator-text">
                   <strong>42</strong>Groups
                 </div><!-- body -->
     				  </div><!-- elements -->
-  						<div class="circled-icon-indicator" data-toggle="tooltip" data-html="true" data-placement="bottom" title="" data-original-title="Project 1<br>Project 2<br>Project 3">
-  							<div class="circled-icon">
+  						<div class="bpm-numeric-indicator" data-toggle="tooltip" data-html="true" data-placement="bottom" title="" data-original-title="Project 1<br>Project 2<br>Project 3">
+  							<div class="bpm-numeric-indicator-icon">
     							<span class="pficon pficon-project"></span>
                 </div><!-- icon -->
-                <div class="indicator-body">
-                  <strong>17</strong>Projects
+                <div class="bpm-numeric-indicator-text">
+                  <strong>3</strong>Projects
                 </div><!-- body -->
     				  </div><!-- elements -->
 						</div>
@@ -591,10 +601,10 @@
   <script>
     $(function() {
       // matchHeight the contents of each .card-pf and then the .card-pf itself
-      // $(".row-cards-pf > [class*='col'] > .card-pf .card-pf-title").matchHeight();
-      // $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
-      // $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-footer").matchHeight();
-      // $(".row-cards-pf > [class*='col'] > .card-pf").matchHeight();
+      $(".row-cards-pf > [class*='col'] > .card-pf .card-pf-title").matchHeight();
+      $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
+      $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-footer").matchHeight();
+      $(".row-cards-pf > [class*='col'] > .card-pf").matchHeight();
       // initialize tooltips
       $('[data-toggle="tooltip"]').tooltip();
     });

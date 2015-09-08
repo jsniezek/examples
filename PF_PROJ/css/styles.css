@@ -3391,6 +3391,30 @@ table.datatable th:active {
 .prettyprint ol.linenums {
   margin-bottom: 0;
 }
+.bpm-card-list {
+  background: #ffffff;
+}
+.bpm-card-list .list-group-item {
+  border-bottom: none;
+}
+.bpm-card-list li:last-child a {
+  color: #999999;
+}
+.blank-card-bpm {
+  text-align: center;
+}
+.blank-card-bpm .bpm-blank-slate-icon {
+  color: #999999;
+  font-size: 57.6px;
+  line-height: 57.6px;
+}
+.blank-card-bpm .bpm-blank-slate-main-action {
+  font-size: 24px;
+  margin-top: -10px;
+}
+.recent-files {
+  max-width: 100%;
+}
 .recent-files .recent-files-heading {
   border-bottom: 1px solid #d1d1d1;
   margin: 0px -30px 0px -40px;
@@ -3422,15 +3446,6 @@ table.datatable th:active {
   text-decoration: none;
 }
 .recent-files .list-group-item .list-group-item-text {
-  color: #999999;
-}
-.bpm-card-list {
-  background: #ffffff;
-}
-.bpm-card-list .list-group-item {
-  border-bottom: none;
-}
-.bpm-card-list li:last-child a {
   color: #999999;
 }
 .bpm-numeric-indicators {

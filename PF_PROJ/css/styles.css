@@ -3407,10 +3407,12 @@ table.datatable th:active {
   color: #999999;
   font-size: 57.6px;
   line-height: 57.6px;
+  margin-bottom: 30px;
 }
 .blank-card-bpm .bpm-blank-slate-main-action {
   font-size: 24px;
   margin-top: -10px;
+  margin-bottom: 30px;
 }
 .recent-files {
   max-width: 100%;
@@ -3447,6 +3449,10 @@ table.datatable th:active {
 }
 .recent-files .list-group-item .list-group-item-text {
   color: #999999;
+}
+.recent-files .list-group-item .list-group-item-empty-text {
+  color: #999999;
+  font-size: 12px;
 }
 .bpm-numeric-indicators {
   float: right;

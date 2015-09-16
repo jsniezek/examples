@@ -4,6 +4,7 @@
 @font-path:         "../bower_components/patternfly/dist/fonts";
 @icon-font-path:    "../bower_components/patternfly/components/bootstrap/fonts/";
 
+// style for lists within cards (last item in list will be a "more..." link)
 .bpm-card-list {
 	background: @card-pf-bg-color;
 	.list-group-item {
@@ -16,8 +17,8 @@
 	}
 }
 
+// style for 'empty state cards'
 .blank-card-bpm {
-  //style for 'empty state cards'
   text-align: center;
   .bpm-blank-slate-icon{
     color: @gray-light;
@@ -27,7 +28,7 @@
   }
   .bpm-blank-slate-main-action{
     font-size: @font-size-h1;
-    margin-top: -10px; //was: @line-height-computed
+    margin-top: -10px;
     margin-bottom: 30px;
   }
  .bpm-blank-slate-description {
@@ -35,32 +36,19 @@
   }
 }
 
-.recent-files {
+// right-hand sidebar, containing lists of links
+.sidebar-bpm {
   max-width: 100%;
-  .recent-files-heading {
-    border-bottom: 1px solid @card-pf-border-color;
-    margin: 0px -@grid-gutter-width*(3/4) 0px -@grid-gutter-width;
+  background-color: #fff;
+  border-left: 1px solid @sidebar-pf-border-color;
+
+  .sidebar-bpm-heading {
+    margin: 0px -@grid-gutter-width/2 0px -@grid-gutter-width;
     padding: 2px @grid-gutter-width 0px  @grid-gutter-width;
-  }
-
-  .recent-files-title {
-    font-size: @font-size-h3;
-    font-weight: 300;
-    margin: @grid-gutter-width/2 0;
-    padding: 0;
-  }
-
-  h5 {
-    margin: 0 -@grid-gutter-width*(3/4) 0 -@grid-gutter-width;
-    padding: 0 @grid-gutter-width 20px  @grid-gutter-width;
-    border-bottom: 2px solid @gray-lighter;
-    color: @gray;
-    // font-size: @font-size-h4;
   }
 
   .list-group {
     border-top: none;
-    padding-top: 10px;
   }
 
   .list-group-item {
@@ -68,18 +56,24 @@
     border: none;
     padding-left: 0;
     font-size: @font-size-small;
+    
     a {
       text-decoration: none;
     }
+    
     .list-group-item-text {
+      margin-top: -2px;
       color: @gray-light;
     }
+    
     .list-group-item-empty-text {
       color: @gray-light;
       font-size: @font-size-base;
     }
+    
     .list-group-item-heading {
-    // font-weight: bold;
+      font-weight: normal;
+      font-size: @font-size-base;
     }
   }
 }
@@ -104,12 +98,6 @@ margin-top: -13px;
     color: @text-color;
   }
 }
-
-// .indicators-label{
-// 	margin-top: 2px;
-// 	text-align: right;
-// 	margin-right: -5px;
-// }
 
 .bpm-numeric-indicator-icon{
   float: left;

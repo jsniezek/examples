@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Home</title>
-  <meta charset="utf-8" /> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="bower_components/patternfly/dist/css/patternfly.min.css" rel="stylesheet" media="screen, print">
 	<link href="css/styles.css" rel="stylesheet" media="screen, print">
 </head>
@@ -24,28 +26,28 @@
           <a href="#"><span class="pficon pficon-user"></span>&nbsp; J. Sniezek</a>
         </li>
 			</ul>
-		</div>
-		<ul class="nav navbar-nav navbar-primary">
-      <li class="active">
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="#">Tasks</a>
-      </li>
-      <li>
-        <a href="#">Library</a>
-      </li>
-      <li>
-        <a href="#">Runtime</a>
-      </li>
-      <li>
-        <a href="#">Statistics</a>
-      </li>
-    </ul>
+    	<ul class="nav navbar-nav navbar-primary">
+        <li class="active">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Tasks</a>
+        </li>
+        <li>
+          <a href="#">Library</a>
+        </li>
+        <li>
+          <a href="#">Runtime</a>
+        </li>
+        <li>
+          <a href="#">Statistics</a>
+        </li>
+      </ul>
+    </div>
 	</nav>
   <div class="container-fluid cards-pf"><!-- main container -->
     <div class="row"><!-- main container's row (contains sidebar and card area) -->
-      <div class="col-sm-12 col-lg-9 container-cards-pf"><!-- card area col-lg-push-3-->
+      <div class="col-sm-8 col-md-9 container-cards-pf"><!-- card area col-lg-push-3-->
         <div class="row row-cards-pf"><!-- cards row -->
           <div class="col-sm-4">
             <div class="card-pf">
@@ -234,24 +236,24 @@
           </div>
         </div><!-- end cards row -->
       </div><!-- end card area -->
-      <div class="col-sm-12 col-lg-3 sidebar-pf-right sidebar-bpm"><!-- sidebar left area col-lg-pull-9 --> 
+      <div class="col-sm-4 col-md-3 sidebar-pf sidebar-pf-right sidebar-bpm"><!-- sidebar left area col-lg-pull-9 -->
         <div class="sidebar-bpm-heading"><!-- recent assets heading -->
-          <h3>Recent Assets</h2>
+          <h3>Recent Assets</h3>
         </div>
         <ul class="list-group">
-          <li href="#" class="list-group-item">
+          <li class="list-group-item">
             <a href="#">
               <p class="list-group-item-heading">Business Plan</p>
               <p class="list-group-item-text">Edited Yesterday</p>
             </a>
           </li>
-          <li href="#" class="list-group-item">
+          <li class="list-group-item">
             <a href="#">
               <p class="list-group-item-heading">Process Model</p>
               <p class="list-group-item-text">Viewed 2 hours ago</p>
             </a>
           </li>
-          <li href="#" class="list-group-item">
+          <li class="list-group-item">
             <a href="#">
               <p class="list-group-item-heading">Applicant Data Model</p>
               <p class="list-group-item-text">Edited 3 days ago</p>
@@ -259,10 +261,10 @@
           </li>
         </ul>
         <div class="sidebar-bpm-heading"><!-- links heading -->
-          <h3>Useful Links</h2>
+          <h3>Useful Links</h3>
         </div>
         <ul class="list-group">
-          <li href="#" class="list-group-item">
+          <li class="list-group-item">
             <a href="#">
               <p class="list-group-item-heading">Official documentation</p>
             </a>
@@ -293,17 +295,17 @@
 	<script src="bower_components/patternfly/components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 	<script src="bower_components/patternfly/components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
 	<script src="bower_components/patternfly/components/matchHeight/jquery.matchHeight-min.js" charset="utf-8"></script>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js" charset="utf-8"></script>
 	<script src="bower_components/patternfly/components/d3/d3.min.js" charset="utf-8"></script>
 	<script src="bower_components/patternfly/dist/js/patternfly.min.js" charset="utf-8"></script>
-  
+
   <script>
     var chart1 = c3.generate({
       bindto: '#chart1',
       data: {
         colors: {
-          "On time": 
+          "On time":
       '#46c8f5',     "At risk": '#f0ab00',
           Overdue: '#ec7a08'
         },
@@ -325,7 +327,7 @@
       bindto: '#chart2',
       data: {
         colors: {
-          "On time": 
+          "On time":
       '#46c8f5',     Delayed: '#f0ab00',
           Overdue: '#ec7a08'
         },
@@ -390,5 +392,6 @@
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
-    	
+
 </body>
+</html>

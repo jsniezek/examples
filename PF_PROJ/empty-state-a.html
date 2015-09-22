@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Home</title>
-  <meta charset="utf-8" /> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="bower_components/patternfly/dist/css/patternfly.min.css" rel="stylesheet" media="screen, print">
   <link href="css/styles.css" rel="stylesheet" media="screen, print">
 </head>
@@ -24,30 +26,30 @@
           <a href="#"><span class="pficon pficon-user"></span>&nbsp; J. Sniezek</a>
         </li>
       </ul>
+      <ul class="nav navbar-nav navbar-primary">
+        <li class="active">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Tasks</a>
+        </li>
+        <li>
+          <a href="#">Library</a>
+        </li>
+        <li>
+          <a href="#">Runtime</a>
+        </li>
+        <li>
+          <a href="#">Statistics</a>
+        </li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav navbar-primary">
-      <li class="active">
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="#">Tasks</a>
-      </li>
-      <li>
-        <a href="#">Library</a>
-      </li>
-      <li>
-        <a href="#">Runtime</a>
-      </li>
-      <li>
-        <a href="#">Statistics</a>
-      </li>
-    </ul>
   </nav>
-  <div class="container-fluid"><!-- main container -->
+  <div class="container-fluid cards-pf"><!-- main container -->
     <div class="row"><!-- main container's row (contains sidebar and card area) -->
-      <div class="col-sm-12 col-lg-9 container-cards-pf"><!-- card area col-lg-push-3-->
+      <div class="col-sm-8 col-md-9 col-lg-9 container-cards-pf"><!-- card area col-lg-push-3-->
         <div class="row row-cards-pf"><!-- cards row -->
-          <div class="col-sm-4">
+          <div class="col-sm-12 col-md-4">
             <div class="card-pf">
               <div class="card-pf-body blank-card-bpm">
                 <div class="bpm-blank-slate-main-action">
@@ -65,7 +67,7 @@
               </div>
             </div> <!-- card end -->
           </div> <!-- card column end -->
-          <div class="col-sm-4">
+          <div class="col-sm-12 col-md-4">
             <div class="card-pf">
               <div class="card-pf-body blank-card-bpm">
             <div class="bpm-blank-slate-main-action">
@@ -83,7 +85,7 @@
           </div>
             </div> <!-- card end -->
           </div> <!-- card column end -->
-          <div class="col-sm-4"><!-- card column -->
+          <div class="col-sm-12 col-md-4"><!-- card column -->
             <div class="card-pf">
               <div class="card-pf-body blank-card-bpm">
                 <div class="bpm-blank-slate-main-action">
@@ -101,7 +103,7 @@
               </div>
             </div> <!-- card end -->
           </div> <!-- card column end -->
-          <div class="col-sm-12 col-md-12"><!-- card columm for activity feed -->
+          <div class="col-sm-12 col-md-12 col-lg-12"><!-- card columm for activity feed -->
             <div class="card-pf"><!-- card for activity feed -->
               <div class="modal fade" id="followingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><!-- modal dialog (note: where should this go?) -->
                 <div class="modal-dialog">
@@ -206,7 +208,7 @@
           </div>
         </div><!-- end cards row -->
       </div><!-- end card area -->
-      <div class="col-sm-12 col-lg-3 sidebar-pf sidebar-pf-right sidebar-bpm"><!-- sidebar left area col-lg-pull-9 --> 
+      <div class="col-sm-4 col-md-3 col-lg-3 sidebar-pf sidebar-pf-right sidebar-bpm"><!-- sidebar left area col-lg-pull-9 --> 
         <div class="sidebar-bpm-heading"><!-- recent assets heading -->
           <h3>Recent Assets</h2>
         </div>
@@ -349,3 +351,4 @@
   </script>
       
 </body>
+</html>

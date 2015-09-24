@@ -3400,6 +3400,13 @@ table.datatable th:active {
 .bpm-card-list li:last-child a {
   color: #999999;
 }
+.add-rm-users-bpm {
+  max-height: 30em;
+  overflow-y: auto;
+}
+.modal-subsection-label-bpm {
+  padding-top: 1em;
+}
 .blank-card-bpm {
   text-align: center;
 }

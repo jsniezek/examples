@@ -143,26 +143,56 @@
                       <h4 class="modal-title" id="myModalLabel">Following</h4>
                     </div>
                     <div class="modal-body">
-                      <ul class="list-group checkbox">
-                        <li class="list-group-item">
-                          <label><input type="checkbox">User 1</label>
-                        </li>
-                        <li class="list-group-item">
-                          <label><input type="checkbox">User 2</label>
-                        </li>
-                        <li class="list-group-item">
-                          <label><input type="checkbox">User 3</label>
-                        </li>
-                        <li class="list-group-item">
-                          <label><input type="checkbox">User 4</label>
-                        </li>
-                        <li class="list-group-item">
-                          <label><input type="checkbox">User 5</label>
-                        </li>
-                        <li class="list-group-item">
-                          <label><input type="checkbox">User 6</label>
-                        </li>
-                      </ul>
+                      <!-- removable tags for people we're following -->
+                      <span class="label label-primary">User 1</span>
+                      <span class="label label-primary">User 2</span>
+                      <span class="label label-primary">User 3</span>
+                      <span class="label label-primary">User 4</span>
+                      <span class="label label-primary">User 5</span>
+                      <h5 class="modal-subsection-label-bpm">Add to following:</h5>
+                      <form role="form" class="search-pf has-button">
+                        <div class="form-group has-clear">
+                          <div class="search-pf-input-group">
+                            <label for="search1" class="sr-only">Search</label>
+                            <input id="search1" type="search" class="form-control" placeholder="Search">
+                            <button type="button" class="clear" aria-hidden="true"><span class="pficon pficon-close"></span></button>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                        </div>
+                      </form>
+                      <div class="add-rm-users-bpm">
+                        <ul class="list-group checked-list-box">
+                          <li class="list-group-item">
+                            <label>User 6</label>
+                          </li>
+                          <li class="list-group-item">
+                            <label>User 7</label>
+                          </li>
+                          <li class="list-group-item">
+                            <label>User 8</label>
+                          </li>
+                          <li class="list-group-item">
+                            <label>User 9</label>
+                          </li>
+                          <li class="list-group-item">
+                            <label>User 10</label>
+                          </li>
+                          <li class="list-group-item">
+                            <label>User 11</label>
+                          </li>
+                          <li class="list-group-item">
+                            <label>User 12</label>
+                          </li>
+                          <li class="list-group-item">
+                            <label>User 13</label>
+                          </li>
+                          <li class="list-group-item">
+                            <label>User 14</label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -303,6 +333,7 @@
 	<script src="bower_components/patternfly/dist/js/patternfly.min.js" charset="utf-8"></script>
 
   <script>
+    // placeholder charts
     var chart1 = c3.generate({
       bindto: '#chart1',
       data: {
@@ -384,6 +415,7 @@
   </script>
 
   <script>
+    // match card heights
     $(function() {
       // matchHeight the contents of each .card-pf and then the .card-pf itself
       $(".row-cards-pf > [class*='col'] > .card-pf .card-pf-title").matchHeight();
@@ -394,6 +426,105 @@
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
+
+  <script>
+    // Search box behavior
+    (function($) {
+      $(document).ready(function() {
+        // Hide the clear button if the search input is empty
+        $(".search-pf .has-clear .clear").each(function() {
+          if (!$(this).prev('.form-control').val()) {
+            $(this).hide();
+          }
+        });
+        // Show the clear button upon entering text in the search input
+        $(".search-pf .has-clear .form-control").keyup(function () {
+          var t = $(this);
+          t.next('button').toggle(Boolean(t.val()));
+        });
+        // Upon clicking the clear button, empty the entered text and hide the clear button
+        $(".search-pf .has-clear .clear").click(function () {
+          $(this).prev('.form-control').val('').focus();
+          $(this).hide();
+        });
+      });
+    })(jQuery);
+  </script>
+
+  <script>
+  //sample code for row selection highlight and icon checkboxes - adapted from this: http://bootsnipp.com/snippets/featured/checked-list-group
+    $(function () {
+      $('.list-group.checked-list-box .list-group-item').each(function () {
+            
+        // Settings
+        var $widget = $(this),
+            $checkbox = $('<input type="checkbox" class="hidden" />'),
+            color = ($widget.data('color') ? $widget.data('color') : "primary"),
+            style = ($widget.data('style') == "button" ? "btn-" : "list-group-item-"),
+            settings = {
+                on: {
+                    icon: 'fa fa-check-square-o'
+                },
+                off: {
+                    icon: 'fa fa-square-o'
+                }
+            };
+            
+        $widget.css('cursor', 'pointer')
+        $widget.append($checkbox);
+
+        // Event Handlers
+        $widget.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+          
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $widget.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $widget.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$widget.data('state')].icon);
+        }
+
+        // Initialization
+        function init() {
+            
+            if ($widget.data('checked') == true) {
+                $checkbox.prop('checked', !$checkbox.is(':checked'));
+            }
+            
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($widget.find('.state-icon').length == 0) {
+                $widget.prepend('<span class="state-icon ' + settings[$widget.data('state')].icon + '"></span>');
+            }
+        }
+        init();
+      });
+        
+      $('#get-checked-data').on('click', function(event) {
+        event.preventDefault(); 
+        var checkedItems = {}, counter = 0;
+        $("#check-list-box li.active").each(function(idx, li) {
+            checkedItems[counter] = $(li).text();
+            counter++;
+        });
+        $('#display-json').html(JSON.stringify(checkedItems, null, '\t'));
+      });
+    });
+</script>
 
 </body>
 </html>

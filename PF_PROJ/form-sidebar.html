@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bower_components/patternfly/dist/css/patternfly.min.css" rel="stylesheet" media="screen, print">
+  <link href="css/styles.css" rel="stylesheet" media="screen, print">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-pf" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+            <img src="bower_components/patternfly/dist/img/brand.svg" alt="{{ site.title-product }}" />
+          </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-utility">
+        <li>
+          <a href="#"><span class="pficon pficon-user"></span>&nbsp; J. Sniezek</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-primary">
+        <li class="active">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Tasks</a>
+        </li>
+        <li>
+          <a href="#">Library</a>
+        </li>
+        <li>
+          <a href="#">Runtime</a>
+        </li>
+        <li>
+          <a href="#">Statistics</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container"><!-- main container -->
+    <div class="row"><!-- main container's row (contains sidebar and card area) -->
+      <div class="col-sm-8">
+        <h1>Some Content</h1>
+      </div>
+      <div class="col-sm-4 sidebar-pf sidebar-pf-right">
+        <h1>Form</h1>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="col-lg-4 control-label" for="textInput">Praesent urna</label>
+            <div class="col-lg-8">
+              <input type="text" id="textInput" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-4 control-label" for="textInput2">Augue</label>
+            <div class="col-lg-8">
+              <input type="text" id="textInput2" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-4 control-label" for="textInput3">Pharetra vel</label>
+            <div class="col-lg-8">
+              <input type="text" id="textInput3" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-4">
+              <button type="button" class="btn btn-primary">Save</button>
+              <button type="button" class="btn btn-default">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div><!-- end main container's row -->
+  </div><!-- end main container -->
+
+  <script src="bower_components/patternfly/components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="bower_components/patternfly/components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="bower_components/patternfly/dist/js/patternfly.min.js" charset="utf-8"></script>
+
+</body>
+</html>
